@@ -10,3 +10,25 @@ Import-TpmOwnerAuth              Imports a TPM owner authorization value to the 
 Initialize-Tpm                   Performs part of the provisioning process for a TPM.
 Set-TpmOwnerAuth                 Changes the TPM owner authorization value.
 Unblock-Tpm                      Ends a TPM lockout.
+
+● Get-Help <cmdlet name> -Detailed
+● Get-Help <cmdlet name> -Examples
+● Get-Help <cmdlet name> -Full
+
+TPM 2.0 TPM 1.2
+TPM2 NV Write() TPM NV Write()
+TPM2 NV Read() TPM NV Read()
+TPM2 NV Read (Counter)() TPM ReadCounter()
+TPM2 PCR Read() TPM PCRRead()
+TPM2 PCR Extend() TPM PCRWrite()
+TPM2 Create() TPM Create()
+TPM2 Load() TPM Load()
+TPM2 Unseal(Unbind)() TPM Unbind()
+TPM2 Sign() TPM Sign()
+TPM2 Quote() TPM Quote()
+TPM2 CertifyCreation() TPM Sign()
+TPM2 Sync Begin() TPM Unbind()
+TPM2 Sync End() TPM Unbind()
+
+
+
