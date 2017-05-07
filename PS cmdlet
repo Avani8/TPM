@@ -1,0 +1,12 @@
+Cmdlet	                                Description
+Clear-Tpm                        Resets a TPM to its default state.
+ConvertTo-TpmOwnerAuth           Creates a TPM owner authorization value.
+Disable-TpmAutoProvisioning      Disables TPM auto-provisioning.
+Enable-TpmAutoProvisioning       Enables TPM provisioning for the next restart.
+Get-Tpm                          Gets an object that contains information about a TPM.
+Get-TpmEndorsementKeyInfo        Gets information about the endorsement key and certificates of the TPM.
+Get-TpmSupportedFeature          Verifies whether a TPM supports specified features.
+Import-TpmOwnerAuth              Imports a TPM owner authorization value to the registry.
+Initialize-Tpm                   Performs part of the provisioning process for a TPM.
+Set-TpmOwnerAuth                 Changes the TPM owner authorization value.
+Unblock-Tpm                      Ends a TPM lockout.
