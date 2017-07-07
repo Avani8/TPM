@@ -8,7 +8,9 @@ As is common security practice we encourage everyone to run the tpm2-abrmd as an
 
 Our current configuration assumes that the name for this user and group is tss per the norm established by the trousers TPM 1.2 software stack.
 
-## 2.To build and install the tpm2-abrmd software the following dependencies are required:
+## 2. Dependencies
+
+To build and install the tpm2-abrmd software the following dependencies are required:
 
 GNU Autoconf
 GNU Autoconf archive
