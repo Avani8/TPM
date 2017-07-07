@@ -12,15 +12,15 @@ Our current configuration assumes that the name for this user and group is tss p
 
 To build and install the tpm2-abrmd software the following dependencies are required:
 
--GNU Autoconf
--GNU Autoconf archive
--GNU Automake
--GNU Libtool
--C compiler
--C Library Development Libraries and Header Files (for pthreads headers)
--cmocka unit test framework (optional)
--pkg-config
--glib 2.0 library and development files
+- GNU Autoconf
+- GNU Autoconf archive
+- GNU Automake
+- GNU Libtool
+- C compiler
+- C Library Development Libraries and Header Files (for pthreads headers)
+- cmocka unit test framework (optional)
+- pkg-config
+- glib 2.0 library and development files
 
 NOTE: Different GNU/Linux distros package glib-2.0 differently and so additional packages may be required. The tabrmd requires the GObject and GIO D-Bus support from glib-2.0 so please be sure you have whatever packages your distro provides are installed for these features.
 
