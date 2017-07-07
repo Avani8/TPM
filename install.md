@@ -91,7 +91,10 @@ This will install the executable to locations determined at configure time. See 
 NOTE: This is the only command that should be run as root.
 
 
-## 4.if you have everything correctly installed you should see tpm-udev.rules when you run 
+## 4. Verify installation is correct 
+
+you should see tpm-udev.rules when you run (based on your distribution path)
+
 ```
 ls /etc/udev/rules.d/ 
 ```
