@@ -32,7 +32,7 @@ To build and install the tpm2-abrmd software the following dependencies are requ
 NOTE: Different GNU/Linux distros package glib-2.0 differently and so additional packages may be required. The tabrmd requires the GObject and GIO D-Bus support from glib-2.0 so please be sure you have whatever packages your distro provides are installed for these features.
 ## 3. Building Stack 
 
-### I. building TPM2.0-TSS from source
+### I. Install TPM2.0-TSS
 To obtain the tpm2.0-TSS sources you must clone them as below:
 ```
 $ git clone https://github.com/01org/TPM2.0-TSS.git
@@ -45,7 +45,7 @@ $ make -j$(nproc)
 $ sudo make install
 ```
 
-### II. builfding TPM2-abrmd from source
+### II. Install TPM2-abrmd
 
 To obtain the tpm2-abrmd sources you must clone them as below:
 ```
@@ -151,7 +151,7 @@ $ systemctl daemon-reload &&
 ```
 Once systemd has loaded the unit file you should be able to use systemctl to perform the start / stop / status operations as expected. Systemd should also now start the daemon when the system boots.
 
-## III. building TPM2.0-tools from source
+## III. Install TPM2.0-tools
 To obtain the tpm2.0-tools sources you must clone them as below:
 ```
 $ git clone https://github.com/01org/tpm2.0-tools.git
