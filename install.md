@@ -12,8 +12,8 @@ Our current configuration assumes that the name for this user and group is tss p
 
 To build and install the tpm2-abrmd software the following dependencies are required:
 
-...GNU Autoconf...
----GNU Autoconf archive---
+GNU Autoconf
+GNU Autoconf archive
 GNU Automake
 GNU Libtool
 C compiler
