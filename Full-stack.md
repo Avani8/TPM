@@ -117,7 +117,7 @@ This will install the executable to locations determined at configure time. See 
 NOTE: This is the only command that should be run as root.
 
 
-## Verify installation is correct 
+### Verify installation is correct 
 
 you should see tpm-udev.rules when you run (based on your distribution path)
 
@@ -131,7 +131,7 @@ $ sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 but if this doesn't work on your distro you please consult your distro's documentation.
 
-## Running the Daemon
+### Running the Daemon
 
 Once you've accomplished all of the above, and assuming your system has a TPM2 device, you should be able to execute the tpm2-abrmd using the following command:
 
@@ -140,7 +140,7 @@ $ sudo -u tss tpm2-abrmd
 ```
 This is something you'll only be doing on a development system though. A "real" system will want the daemon to start on boot.
 
-## Running the Systemd
+### Running the Systemd
 
 Just like the configuration files for D-Bus and udev we provide a systemd unit for the tpm2-abrmd. Just like D-Bus and udev the location of unit files is distro specific and so you may need to either manually place this file or provide a path to the ./configure script by way of the --with-systedsystemunitdir option.
 
