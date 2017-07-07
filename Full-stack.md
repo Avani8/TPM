@@ -131,26 +131,6 @@ $ sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 but if this doesn't work on your distro you please consult your distro's documentation.
 
-### Running the Daemon
-
-Once you've accomplished all of the above, and assuming your system has a TPM2 device, you should be able to execute the tpm2-abrmd using the following command:
-
-```
-$ sudo -u tss tpm2-abrmd
-```
-This is something you'll only be doing on a development system though. A "real" system will want the daemon to start on boot.
-
-### Running the Systemd
-
-Just like the configuration files for D-Bus and udev we provide a systemd unit for the tpm2-abrmd. Just like D-Bus and udev the location of unit files is distro specific and so you may need to either manually place this file or provide a path to the ./configure script by way of the --with-systedsystemunitdir option.
-
-Once the provided unit file is in the right place for your distro you should be able to tell systemd to reload it's configuration:
-
-```
-$ systemctl daemon-reload &&
-```
-Once systemd has loaded the unit file you should be able to use systemctl to perform the start / stop / status operations as expected. Systemd should also now start the daemon when the system boots.
-
 ## III. Install TPM2.0-tools
 To obtain the tpm2.0-tools sources you must clone them as below:
 ```
@@ -163,5 +143,27 @@ $ ./configure
 $ make -j$(nproc)
 $ sudo make install
 ```
+
+
+## 4. Running the Daemon
+
+Once you've accomplished all of the above, and assuming your system has a TPM2 device, you should be able to execute the tpm2-abrmd using the following command inside tpm2-abrmd source directory:
+
+```
+$ sudo -u tss tpm2-abrmd
+```
+This is something you'll only be doing on a development system though. A "real" system will want the daemon to start on boot.
+
+## 5. Running Systemd
+
+Just like the configuration files for D-Bus and udev we provide a systemd unit for the tpm2-abrmd. Just like D-Bus and udev the location of unit files is distro specific and so you may need to either manually place this file or provide a path to the ./configure script by way of the --with-systedsystemunitdir option.
+
+Once the provided unit file is in the right place for your distro you should be able to tell systemd to reload it's configuration:
+
+```
+$ systemctl daemon-reload &&
+```
+Once systemd has loaded the unit file you should be able to use systemctl to perform the start / stop / status operations as expected. Systemd should also now start the daemon when the system boots.
+
 
 
