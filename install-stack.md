@@ -16,6 +16,13 @@ To build and install the tpm2-abrmd software the following dependencies are requ
 - GNU Autoconf archive
 - GNU Automake
 - GNU Libtool
+- git
+- m4
+- gcc
+- g++
+- libcmocka0
+- libcmocka-dev
+- build-essential
 - C compiler
 - C Library Development Libraries and Header Files (for pthreads headers)
 - cmocka unit test framework (optional)
@@ -24,46 +31,23 @@ To build and install the tpm2-abrmd software the following dependencies are requ
 
 NOTE: Different GNU/Linux distros package glib-2.0 differently and so additional packages may be required. The tabrmd requires the GObject and GIO D-Bus support from glib-2.0 so please be sure you have whatever packages your distro provides are installed for these features.
 # I. Building TPM2.0-TSS From Source
-clone the git repo
-
+To obtain the tpm2.0-TSS sources you must clone them as below:
+git clone https://github.com/01org/TPM2.0-TSS.git
+source directory:
 ```
-git clone https://github.com/01org/tpm2-abrmd.git
-
-cd tpm2-abrmd
-```
-### a. Bootstrapping the build
-
-When building the tpm2-abrmd source code from the upstream git repo you will need to first run the bootstrap script to setup the autotools build files:
-
-```
-./bootstrap
-```
-### b. Configuring the build
-```
-./configure 
-```
-### c. Compilation
-
-Compiling the code requires running make. You may provide make whatever parameters required for your environment (e.g. to enable parallel builds) but the defaults should be sufficient. The maintainers build enabling parallel builds like so:
-```
+$ ./bootstrap
+$ ./configure 
 $ make -j$(nproc)
-```
-### d. Installation
-
-Once successfully built the tpm2-TSS daemon can be installed using the command:
-```
 $ sudo make install
 ```
 
 ## II. Building TPM2-abrmd From Source
 
-clone the git repo
-
-```
+To obtain the tpm2-abrmd sources you must clone them as below:
 git clone https://github.com/01org/tpm2-abrmd.git
 
-cd tpm2-abrmd
-```
+Source directory:
+
 ### a. Bootstrapping the build
 
 When building the tpm2-abrmd source code from the upstream git repo you will need to first run the bootstrap script to setup the autotools build files:
@@ -162,5 +146,15 @@ $ systemctl daemon-reload &&
 ```
 Once systemd has loaded the unit file you should be able to use systemctl to perform the start / stop / status operations as expected. Systemd should also now start the daemon when the system boots.
 
-# III.  TPM2.0-tools
+# III.  TPM2.0-tools 
+To obtain the tpm2.0-tools sources you must clone them as below:
+git clone https://github.com/01org/tpm2.0-tools.git
+Source directory:
+```
+$ ./bootstrap
+$ ./configure 
+$ make -j$(nproc)
+$ sudo make install
+```
+
 
