@@ -33,7 +33,7 @@ NOTE: Different GNU/Linux distros package glib-2.0 differently and so additional
 ## I. Building TPM2.0-TSS From Source
 To obtain the tpm2.0-TSS sources you must clone them as below:
 ```
-git clone https://github.com/01org/TPM2.0-TSS.git
+$ git clone https://github.com/01org/TPM2.0-TSS.git
 ```
 source directory:
 ```
@@ -47,7 +47,7 @@ $ sudo make install
 
 To obtain the tpm2-abrmd sources you must clone them as below:
 ```
-git clone https://github.com/01org/tpm2-abrmd.git
+$ git clone https://github.com/01org/tpm2-abrmd.git
 ```
 Source directory:
 
@@ -152,7 +152,7 @@ Once systemd has loaded the unit file you should be able to use systemctl to per
 ## III.  TPM2.0-tools 
 To obtain the tpm2.0-tools sources you must clone them as below:
 ```
-git clone https://github.com/01org/tpm2.0-tools.git
+$ git clone https://github.com/01org/tpm2.0-tools.git
 ```
 Source directory:
 ```
