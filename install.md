@@ -1,6 +1,8 @@
 This is a quick set of instructions to build, install and run the intal's TPM2-abrmd.
 
-## 1. System User & Group Account - (create user and group called tss with root level access)
+## 1. System User & Group Account 
+
+(create user and group called tss with root level access)
 
 As is common security practice we encourage everyone to run the tpm2-abrmd as an unprivileged user. This requires creating a user account and group to use for this purpose. Generally this is something your distro will do for you since the steps to create such an account can be distro-specific.
 
