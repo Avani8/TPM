@@ -69,7 +69,7 @@ The typical operation for the tpm2-abrmd is for it to communicate directly with 
 
 This requires that udev be instructed to set the owner and group for this device node. We provide such a udev rule that is installed to ${libdir}/udev/rules.d per GNU conventions.
  
-it is located at ````/etc/udev/rules.d/ (for debian/ raspbian distribution)``` so we have --with-udevrulesdir=/etc/udev/rules.d/
+it is located at ```/etc/udev/rules.d/ (for debian/ raspbian distribution)``` so we have --with-udevrulesdir=/etc/udev/rules.d/
 
 If your distro stores these rules elsewhere you will need to tell the build about this location using the configure script.
 
