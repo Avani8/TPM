@@ -62,14 +62,14 @@ Depending on how you've configured the source tree and how your specific flavor 
 
 The dbus-daemon will also need to be instructed to read this configuration file (assuming it's installed in a location consulted by dbus-daemon) before the policy will be in effect. Consult the D-Bus manual (aka DBUS-DAEMON(1)) for instructions.
  
-it is located at ```/etc/dbus-1/system.d (for debian/ raspbian distribution)``` so we have --with-dbuspolicydir=/etc/dbus-1/system.d
+it is located at ```/etc/dbus-1/system.d (for debian/ raspbian distribution)``` so we have ```--with-dbuspolicydir=/etc/dbus-1/system.d```
 
 ##### for udev : 
 The typical operation for the tpm2-abrmd is for it to communicate directly with the Linux TPM driver using libtcti-device from the TPM2.0-TSS project. This requires that the user account that's running the tpm2-abrmd have both read and write access to the TPM device node /dev/tpm[0-9].
 
 This requires that udev be instructed to set the owner and group for this device node. We provide such a udev rule that is installed to ${libdir}/udev/rules.d per GNU conventions.
  
-it is located at ```/etc/udev/rules.d/ (for debian/ raspbian distribution)``` so we have --with-udevrulesdir=/etc/udev/rules.d/
+it is located at ```/etc/udev/rules.d/ (for debian/ raspbian distribution)``` so we have ```--with-udevrulesdir=/etc/udev/rules.d/```
 
 If your distro stores these rules elsewhere you will need to tell the build about this location using the configure script.
 
