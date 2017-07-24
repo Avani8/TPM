@@ -3,8 +3,8 @@ This is a quick set of instructions to build, install and run the intal's TPM2-a
 ## 1. System User & Group Account 
 
 (create user and group called tss with root level access)
-Our current configuration assumes that the name for this user and group is tss per the norm established by the trousers TPM 1.2 software stack.
-As is common security practice we encourage everyone to run the tpm2-abrmd as an unprivileged user. This requires creating a user account and group to use for this purpose. Generally this is something your distro will do for you since the steps to create such an account can be distro-specific.
+Our current configuration assumes that the name for this user and group is tss as per the norm established by the trousers TPM 1.2 software stack.
+As it is common security practice we encourage everyone to run the tpm2-abrmd as an unprivileged user. This requires creating a user account and group to use for this purpose. Generally this is something your distro will do for you since the steps to create such an account can be distro-specific.
 
 
 
