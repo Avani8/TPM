@@ -1,4 +1,4 @@
-This is a quick set of instructions to build, install and run the intal's TPM2-abrmd.
+Here are quick set of instructions to build, install and run the intal's TPM2-abrmd.
 
 ## 1. System User & Group Account 
 
